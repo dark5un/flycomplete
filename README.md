@@ -10,3 +10,8 @@ flycomplete -install
 
 2. Restart your shell
 
+## Uninstall
+
+```
+flycomplete -uninstall
+```
