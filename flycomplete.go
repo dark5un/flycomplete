@@ -299,9 +299,12 @@ func main() {
 			"workers":           workers,
 		},
 		GlobalFlags: complete.Flags{
-			"--help":                complete.PredictNothing,
-			"--target=":             complete.PredictAnything,
-			"--version":             complete.PredictNothing,
+			"--help":    complete.PredictNothing,
+			"-h":        complete.PredictNothing,
+			"--target=": complete.PredictAnything,
+			"-t":        complete.PredictAnything,
+			"--version": complete.PredictNothing,
+			"-v":        complete.PredictNothing,
 			"--print-table-headers": complete.PredictAnything,
 		}}
 	complete.New("fly", fly).Run()
